@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Game</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a1a;
+            color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('https://img.freepik.com/free-vector/binary-code-pattern-background_1142-902.jpg'); /* Замените на реальный URL фона */
+            background-size: cover;
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(44, 44, 44, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        .counter {
+            font-size: 30px;
+            margin: 20px 0;
+        }
+        .image-link img {
+            max-width: 25%; /* Уменьшает изображение до 25% от доступной ширины */
+            height: auto;
+            border-radius: 50%; /* Делает изображение круглым */
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .image-link img:hover {
+            transform: scale(1.05);
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Anonymous Game</h1>
+        <div class="image-link" onclick="incrementCounter()">
+            <img src="https://img.goodfon.ru/original/3046x2029/6/41/anonymous-anonimus-maska-2837.jpg" alt="Clickable Image"> <!-- Замените на реальный URL изображения -->
+        </div>
+        <div class="counter">Clicks: <span id="clickCount">0</span></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
